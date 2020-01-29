@@ -1,0 +1,7 @@
+const arr = [2, 4, 5, 1, 7, 5, 2, 1];
+// Get a sum(10) -- 4, 5 , 1
+// first element out -- 2
+arr.shift();
+arr.splice(3,4);
+
+console.log(arr);

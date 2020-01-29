@@ -1,0 +1,7 @@
+const createPerson = (name, age, gender) => {
+  "use strict";
+  // Return an Object with the same variable names as parameters passed
+  return {name,age, gender};
+  // change code above this line
+};
+console.log(createPerson("Zodiac Hasbro", 56, "male")); // returns a proper object

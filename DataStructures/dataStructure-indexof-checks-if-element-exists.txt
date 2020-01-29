@@ -1,0 +1,6 @@
+function quickCheck(arr, elem) {
+  // indexOf returns the index of the element in the array or -1 if nt exists
+  return arr.indexOf(elem) != -1;
+}
+// change code here to test different cases:
+console.log(quickCheck(['squash', 'onions', 'shallots'], 'mushrooms'));
