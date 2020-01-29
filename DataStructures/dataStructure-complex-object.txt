@@ -1,0 +1,13 @@
+let userActivity = {
+  id: 23894201352,
+  date: 'January 1, 2017',
+  data: {
+    totalUsers: 51,
+    online: 42
+  }
+};
+
+// Can access, modify or add data to complex Object
+userActivity.data.online = 45;
+
+console.log(userActivity);

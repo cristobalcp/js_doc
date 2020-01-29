@@ -1,0 +1,17 @@
+function reverseString(str) {
+  // return the reversed str
+  let reverseString = "";
+  for(let i = str.length-1; reverseString.length < str.length; i--){
+    reverseString += str[i];
+
+  }
+  /* Other way
+  return str
+    .split("") turns an string into an array
+    .reverse() reverse an array
+    .join(""); turns array into string
+   */
+  return reverseString;
+}
+
+console.log(reverseString("opa"));

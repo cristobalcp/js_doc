@@ -1,0 +1,10 @@
+function countOnline(usersObj) {
+  // cant do user.online directly
+  let cnt=0;
+  for(let user in usersObj){
+    if(usersObj[user].online == true){
+      cnt++;
+    }
+  }
+  return cnt;
+}
