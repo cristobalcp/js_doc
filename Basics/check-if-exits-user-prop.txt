@@ -28,19 +28,20 @@ var contacts = [
 
 
 function lookUpProfile(name, prop){
-// Buscar contactos con x propiedad (comprobar contacto y propiedad)
 
-for(var i = 0; i < contacts.length; i++){
-    if(contacts[i].firstName === name){
-        if(contacts[i].hasOwnProperty(prop)){
-            return contacts[i][prop];
-        }else{
-            return "No such property";
+    // Search contacts with x prop (contact and prop must exist):
+    for(var i = 0; i < contacts.length; i++){
+        if(contacts[i].firstName === name){
+            if(contacts[i].hasOwnProperty(prop)){
+                return contacts[i][prop];
+            }else{
+                return "No such property";
+            }
         }
     }
-}
-return "No such contact";
-// Only change code above this line
+    return "No such contact";
+    // Only change code above this 
+
 }
 
 // Change these values to test your function

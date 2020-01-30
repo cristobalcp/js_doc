@@ -1,0 +1,5 @@
+// Import some code from a file: 
+import{ uppercaseString, lowercaseString as lowerStr} from "./string_functions.js";  
+
+uppercaseString("hello");
+lowerStr("WORLD!");
