@@ -1,4 +1,5 @@
 const makeServerRequest = new Promise((resolve, reject) => {
+ 
   // responseFromServer is set to false to represent an unsuccessful response from a server
   let responseFromServer = false;
     
@@ -10,9 +11,11 @@ const makeServerRequest = new Promise((resolve, reject) => {
 });
 
 //Out of promise declaration we handle results
+//.then when success
 makeServerRequest.then(result => {
   console.log(result);
 });
+//.catch when error
 makeServerRequest.catch(error => {
   console.log(error);
 });
