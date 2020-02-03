@@ -1,0 +1,8 @@
+function myReplace(str, before, after) {
+  if(!/[A-Z]/.test(before[0])){
+    return str.replace(before, after);
+  }else{
+    return str.replace(before, after.charAt(0).toUpperCase()+after.slice(1));
+  }
+}
+myReplace("Let us go to the store", "store", "mall");

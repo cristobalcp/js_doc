@@ -1,0 +1,17 @@
+function convertToRoman(num) {
+    let decimalValue = [1000, 900, 500, 400, 100, 90, 50, 40, 10, 9, 5, 4, 1];
+    let romanNumeral = ["M","CM","D","CD","C","XC","L","XL","X","IX","V","IV","I"];
+    let romanized = "";
+    // iterate over decimal values
+    for (let index = 0; index < decimalValue.length; index++) {
+        // while number value is higher than or equal to current decimal value...
+        while (decimalValue[index] <= num) {
+            // add to result the roman value
+            romanized += romanNumeral[index];
+            // substract the decimal value to the number
+            num -= decimalValue[index];
+    }
+  }
+    return romanized;
+}
+convertToRoman(36);

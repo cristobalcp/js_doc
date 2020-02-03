@@ -1,0 +1,19 @@
+function palindrome(str) {
+ // Palindrome // Capicua str 
+  let transform = function(str){
+    // Non number or letter
+    let regex = /[^A-Za-z0-9]+/g;
+    return str.replace(regex, "").toLowerCase();
+  }
+  let isPalindorme = function(str){
+    let reversed = str.split("").reverse().join("");
+    if(str.localeCompare(reversed) === 0){
+      return true;
+    }else return false;
+  }
+  return isPalindorme(transform(str)) ? true: false;
+}
+
+
+
+palindrome("eye");
