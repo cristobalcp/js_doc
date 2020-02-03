@@ -1,0 +1,11 @@
+function checkPositive(arr) {
+  // EVERY -- if all items pass criteria = true
+  
+  return arr.every(
+    function(currentValue) {
+      return currentValue >= 0;
+    });
+
+}
+
+console.log(checkPositive([1, 2, 3, -4, 5]));

@@ -1,0 +1,21 @@
+let bird = {
+  name: "Donald",
+  numLegs: 2
+};
+
+let boat = {
+  name: "Warrior",
+  type: "race-boat"
+};
+
+// Common behavior between unrelated objs
+let glideMixin = function(obj){
+
+  obj.glide = function(){
+    console.log("glides");
+  }
+};
+
+// You can pass any type of obj that you want to glide
+glideMixin(bird);
+glideMixin(boat);

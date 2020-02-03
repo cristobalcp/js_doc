@@ -1,0 +1,9 @@
+function Bird() {
+  //Private variable can only be accessed by get/setters
+  let weight = 15;
+  
+  this.getWeight = function(){
+    return weight;
+  }
+
+}

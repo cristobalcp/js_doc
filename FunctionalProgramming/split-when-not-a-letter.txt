@@ -1,0 +1,7 @@
+function splitify(str) {
+  // Using Not a letter ReGex to split
+   let regex = /[^a-zA-Z]+/;
+   return str.split(regex);
+
+}
+console.log(splitify("Hello World,I-am code"));

@@ -1,0 +1,10 @@
+function add(x) {
+  // One multi arg function can be divided in multi functions with 1 arg
+  return function(y){
+    return function(z)
+    {
+      return x+y+z;
+    }
+  }
+}
+console.log(add(10)(20)(30));

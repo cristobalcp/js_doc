@@ -1,0 +1,14 @@
+// the global variable
+var globalTitle = "Winter Is Coming";
+
+// URL transform
+function urlSlug(title) {
+    return title.toLowerCase().trim()
+        .split(/\s/)
+        .filter(item =>   item != "")
+        .join("-");
+
+}
+
+var winterComing = urlSlug(globalTitle); // Should be "winter-is-coming"
+console.log(winterComing)

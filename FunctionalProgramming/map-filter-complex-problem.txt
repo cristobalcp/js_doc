@@ -1,0 +1,14 @@
+const squareList = (arr) => {
+  // only change code below this line
+  var newArray = [];
+  var regEx = /^\d+$/;
+  //First fliter ints using a regex and then get single item square with map
+  newArray = arr
+  .filter(item => regEx.test(item))
+  .map(item => Math.pow(item,2));
+  
+  return newArray;
+};
+
+const squaredIntegers = squareList([-3, 4.8, 5, 3, -3.2]);
+console.log(squaredIntegers);

@@ -1,0 +1,6 @@
+function checkPositive(arr) {
+  // SOME -- if 1 item passes criteria == true
+  return arr.some( item => item > 0);
+
+}
+checkPositive([1, 2, 3, -4, 5]);

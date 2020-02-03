@@ -1,0 +1,26 @@
+let funModule = (function() {
+  return{
+    isCuteMixin : function(obj) {
+      obj.isCute = function() {
+        return true;
+      };
+    },
+      singMixin : function(obj) {
+        obj.sing = function() {
+        console.log("Singing to an awesome tune");
+      };
+        obj.sang = function(){
+          console.log("Sang to an awesome tune");
+        };
+    }
+  }
+})();
+//USING IT: 
+function Dog(name) {this.name = name;}
+let newDog = new Dog("Pepe");
+newDog.name = "Pepae";
+
+console.log(newDog.name);
+
+funModule.singMixin(newDog);
+newDog.sing();

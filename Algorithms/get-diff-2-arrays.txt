@@ -1,0 +1,9 @@
+function diffArray(arr1, arr2) {
+  // Create concatenated array and filter data 
+  return arr1
+    .concat(arr2)
+    .sort() //Pranks
+    .filter(item => !arr1.includes(item) || !arr2.includes(item));
+}
+
+console.log(diffArray([1, 2, 3, 5], [1, 2, 3, 4, 5]));
